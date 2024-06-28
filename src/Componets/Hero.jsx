@@ -24,7 +24,7 @@ const Hero = () => {
           <Container>
             <div className=" d-flex justify-content-between align-items-center">
               <div>
-                <img src={logo} alt="logo" />
+                <img className="cursel_pointer" src={logo} alt="logo" />
               </div>
               <ul
                 className={`${
@@ -77,7 +77,7 @@ const Hero = () => {
                   </a>
                 </li>
                 <li className=" dropdown ml-28">
-                  <img src={dropdown} alt="dropdown" />
+                  <img className="cursel_pointer" src={dropdown} alt="dropdown" />
                   <div class="dropdown-content">
                     <p className=" mb-0  color-grey   text-uppercase ff-maro text-16 fw-normal lh-24">
                       spanish
@@ -140,9 +140,9 @@ const Hero = () => {
                       <rect
                         width="20"
                         height="20"
-                        fill="white"
+                        fill="white"           
                         transform="translate(0.5)"
-                      />
+                      /> 
                     </clipPath>
                   </defs>
                 </svg>
@@ -150,19 +150,20 @@ const Hero = () => {
             </button>
           </div>
           <div
-            className=" d-flex justify-content-center position-relative z-0 "
+            className=" d-flex justify-content-center  z-0 "
             data-aos="zoom-in-down"
           >
             <img className=" w-100 " src={bigimg} alt="personimg" />
-            <a href="#about" className=" d-lg-block d-none herobtn">
-              <img src={ttob} alt="ttob_btn" />
-            </a>
+            
           </div>
         </Container>
         <div className=" hero_left_ellipe hero_ellipe_1"></div>
         <div className=" d-flex justify-content-center">
           <img src={lyar} alt="herolyar" />
         </div>
+        <a href="#about" className=" d-lg-block d-none herobtn">
+              <img src={ttob} alt="ttob_btn" />
+            </a>
       </header>
     </>
   );

@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className=" footer_bg mt_2">
         <Container className=" pb-4 pt-124">
-          <h2 className=" ff-maro fw-semibold  text-60 lh-72 mb-0 color-yellow text-center">
+          <h2 className=" cursel_pointer ff-maro fw-semibold  text-60 lh-72 mb-0 color-yellow text-center">
             $CLAIR
           </h2>
           <p className=" ff-maro fw-normal text-16 lh-24 text-center color-darkgrey mb-0  pt-20">
@@ -19,7 +19,7 @@ const Footer = () => {
             the crypto defender is here, armed with memes and ready to act.
           </p>
 
-          <ul className=" d-flex align-items-center flex-wrap gap_32 ps-0 justify-content-sm-center mt-50  mb-0 pb-40">
+          <ul className=" d-flex align-items-center flex-wrap gap_32 ps-0 justify-content-center mt-50  mb-0 pb-40">
             <li><a href="#about" className=" ff-maro nav_text fw-medium text-16 lh-24 color-lightgrey">About</a></li>
             <li><a href="#tok" className=" ff-maro nav_text fw-medium text-16 lh-24 color-lightgrey">Tokenomics</a></li>
             <li><a href="#aud" className=" ff-maro nav_text fw-medium text-16 lh-24 color-lightgrey">Audit</a></li>

@@ -3,6 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Clair_common } from "../common/Icon";
 import tokenimg from "../assets/images/png/Tokenomics_img.webp";
 import cartoon from "../assets/images/png/sinclair-cartoon.webp"
+import img_1 from "../assets/images/png/sinclairimg1.png"
+import plus from "../assets/images/svg/plus_svg.svg"
+import img_2 from "../assets/images/png/sinclairimg2.png"
 const Tokenomics = () => {
   return (
     <>
@@ -88,7 +91,17 @@ const Tokenomics = () => {
         <Container className=" pb-96">
             <div data-aos="zoom-in-down" className="token_box">
                 <div className=" d-flex flex-column flex-lg-row align-items-center justify-content-between">
-                    <img data-aos="zoom-in-down" src={cartoon} alt="sinclaircartoon" />
+                  
+                  <div className=" d-flex align-items-center gap-20">
+                    <div className="sinclair_box">
+                      <img className=" w-100" src={img_1} alt="sanclair" />
+                    </div>
+                    
+                    <img src={plus} alt="plus" />
+                    <div className="sinclair_box">
+                      <img className=" w-100" src={img_2} alt="sanclair" />
+                    </div>
+                  </div>
                     <div data-aos="zoom-in-down" className=" mx-xl-0 mx-sm-4 mt-lg-0 mt-4 d-flex flex-column gap-10">
                         <p className=" ff-maro fw-semibold text-20 lh-30 mb-0  color-lightwhite">Baby Sinclair Stands Strong with the Shiba Inu Community</p>
                         <p className=" ff-maro text-16 lh-24 text-16 fw-normal color-grey ">10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
