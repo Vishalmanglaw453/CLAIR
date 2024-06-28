@@ -266,11 +266,31 @@ img[alt="personimg"] {
   max-width: 818px;
   width: 100%;
   background: #FFFFFF05;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
   position: relative;
   z-index: 1;
 
 }
+.big_box::before {
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  background:linear-gradient(123.75deg, rgba(255, 255, 255, 0.2) 11.04%, rgba(255, 255, 255, 0.02) 87.64%) border-box;
+  width: 100%;
+  mask-composite: exclude;
+  inset: 0;
+  border-radius:
+    20px;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
+  transition: all linear 300ms !important;
+}
+
+
 
 .clair_box {
   max-width: unset;
@@ -402,7 +422,7 @@ img[alt="cartoonpos"] {
 
 /* token */
 img[alt="tokenimg"] {
-  max-width: 491px;
+  max-width: 507px;
   width: 100%;
 
 }
@@ -416,7 +436,7 @@ img[alt="tokenimg"] {
 }
 
 .token_box {
-  max-width: 1320px;
+  max-width: 1255px;
   border: 0;
   padding: 24px;
   border-radius: 16px;
@@ -429,7 +449,7 @@ img[alt="tokenimg"] {
   content: "";
   position: absolute;
   border: 1px solid transparent;
-  background: linear-gradient(107.74deg, rgba(255, 246, 36, 0.27) -16.6%, rgba(255, 246, 36, 0) 134.64%);
+  background: linear-gradient(107.74deg, rgba(255, 246, 36, 0.27) -16.6%, rgba(255, 246, 36, 0) 134.64%) border-box;
   width: 100%;
   mask-composite: exclude;
   inset: 0;
@@ -488,7 +508,7 @@ img[alt="Auditedimglogo"] {
   content: "";
   position: absolute;
   border: 1px solid transparent;
-  background: linear-gradient(107.74deg, rgba(255, 246, 36, 0.27) -16.6%, rgba(255, 246, 36, 0) 134.64%);
+  background: linear-gradient(107.74deg, rgba(255, 246, 36, 0.27) -16.6%, rgba(255, 246, 36, 0) 134.64%) border-box;
   width: 100%;
   mask-composite: exclude;
   inset: 0;
@@ -678,7 +698,7 @@ img[alt="white_arrow"] {
   content: "";
   position: absolute;
   border: 1px solid transparent;
-  background: linear-gradient(107.74deg, rgba(255, 246, 36, 0.27) -16.6%, rgba(255, 246, 36, 0) 134.64%);
+  background: linear-gradient(107.74deg, rgba(255, 246, 36, 0.27) -16.6%, rgba(255, 246, 36, 0) 134.64%) border-box;
   width: 100%;
   mask-composite: exclude;
   inset: 0;
@@ -720,7 +740,7 @@ img[alt="socialcartoon"] {
   content: "";
   position: absolute;
   border: 1px solid transparent;
-  background: linear-gradient(153.46deg, rgba(255, 246, 36, 0.4) -9.68%, rgba(255, 246, 36, 0) 119.9%);
+  background: linear-gradient(153.46deg, rgba(255, 246, 36, 0.4) -9.68%, rgba(255, 246, 36, 0) 119.9%) border-box;
   width: 100%;
   mask-composite: exclude;
   inset: 0;

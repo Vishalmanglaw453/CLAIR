@@ -12,7 +12,7 @@ const Tokenomics = () => {
       <section className="Tokenomics_bg  mt_2" id="tok">
         <Container className=" pt-104 pb-60" id="blog" >
           <Row>
-            <Col lg={5} className=" order-lg-1  order-2 pt-20">
+            <Col lg={6} className=" order-lg-1  order-2 pt-20">
               <h2 data-aos="zoom-in-down" className=" ff-maro mb-0 fw-semibold  text-48 lh-57 color-lightwhite">
                 Tokenomics
               </h2>
@@ -83,13 +83,13 @@ const Tokenomics = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={7} className=" order-lg-2 order-1  d-flex justify-content-lg-end justify-content-center">
+            <Col lg={6} className=" order-lg-2 order-1  d-flex  justify-content-center">
               <img data-aos="zoom-in-down" src={tokenimg} alt="tokenimg" />
             </Col>
           </Row>
         </Container>
-        <Container className=" pb-96">
-            <div data-aos="zoom-in-down" className="token_box">
+        <Container className=" pb-96 d-flex justify-content-center justify-content-lg-start ">
+            <div data-aos="zoom-in-down" className="token_box w-100">
                 <div className=" d-flex flex-column flex-lg-row align-items-center justify-content-between">
                   
                   <div className=" d-flex align-items-center gap-20">

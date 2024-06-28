@@ -15,29 +15,32 @@ import Buy from "./Componets/Buy";
 import Socials from "./Componets/Socials";
 import { useState, useEffect } from "react";
 import Priloder from "./Componets/Priloder";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
-  useEffect(() => {
-    AOS.init({ once: true, duration: 2500 });
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 3000);
+  // }, []);
+  // useEffect(() => {
+  //   AOS.init({ once: true, duration: 2500 });
+  // }, []);
 
+  // {isLoading === true ? (
+  //   <>
+  //   <Priloder/>
+  //   </>
+  // ) : (
+  //   <>
+  //       </>
+  //     )}
   return (
     <div className="App">
        
-      {isLoading === true ? (
-        <>
-        <Priloder/>
-        </>
-      ) : (
-        <>
+     
           <Hero />
           <Buy />
           <About />
@@ -48,8 +51,7 @@ function App() {
           <Frequently />
           <Socials />
           <Footer />
-        </>
-      )}
+    
     </div>
   );
 }
